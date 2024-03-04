@@ -26,7 +26,13 @@
 
       body {
         padding-left: 15%;
-        padding-right: 15%
+        padding-right: 15%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .page {
+        max-width: 700pt;
       }
 
       .title {
@@ -78,18 +84,21 @@
       }
 
       a {
-        color: #D97A00;
+        color: #b86700;
         border-bottom: 1px solid #32231F;
         text-decoration: none;
       }
 
       a:hover {
-        border-bottom: 2px solid #D97A00;
+        border-bottom: 2px solid #b86700;
       }
 
       img.photo {
+          width: 300px;
+          height: auto;
           max-width: 15%;
           max-height: 15%;
+          min-width: 150px;
           float: right;
           margin: 0 0 5px 5px;
           border-radius: 50%;
@@ -101,6 +110,8 @@
           padding-right: 2%
         }
         img.photo {
+          width: 300px;
+          height: auto;
           max-width: 30%;
           max-height: 30%;
         }
@@ -116,62 +127,64 @@
     </script>
   </head>
   <body>
-    <div class="header">
-      <a href="others/gerard pic (large).png"><img src="others/profile.webp" alt="profile picture" class="photo"></a>
-      <div class="title">
-        Gerard Tabone
+    <div class="page">
+      <div class="header">
+        <a href="others/gerard pic (large).png"><img src="others/profile.webp" alt="profile picture" class="photo"></a>
+        <div class="title">
+          Gerard Tabone
+        </div>
+        <div class="subtitle">
+          Ph.D. student in computer science at the <a href="https://www.um.edu.mt/ict/">University of Malta</a>.
+        </div>
+        <div class="subsubtitle">
+          <p>
+          I'm a graduate student at the Department of Computer Science, advised by <a href="http://staff.um.edu.mt/afra1/">Adrian Francalanza</a>.
+          </p>
+          <!-- <p>
+          My research interests include concurrency, type systems, formal verification and behavioural types. 
+          </p> -->
+          You can reach me via <a href="mailto:gerard.tabone@um.edu.mt">email</a> (or <a href="https://twitter.com/gerardtabone">twitter</a>, <a href="https://dblp.org/pid/305/8698">dblp</a>).
+          </p>
+          <!-- <p>
+            <a href="https://github.com/gertab/">GitHub</a>
+            &#128205; 0A11, Faculty of ICT, University of Malta
+          </p> -->
+        </div>
       </div>
-      <div class="subtitle">
-        Ph.D. student in computer science at the <a href="https://www.um.edu.mt/ict/">University of Malta</a>.
+      <div class="content">
+        <section>
+          <h1>Papers</h1>
+          <!-- <h1>Papers and Talks</h1> -->
+          <ul>
+            <li>
+              <a href="publications/FrancalanzaTaboneJLAMP.pdf">ElixirST: A Session-Based Type System for Elixir Modules</a>.
+              Adrian Francalanza, Gerard Tabone. <a href="https://www.sciencedirect.com/journal/journal-of-logical-and-algebraic-methods-in-programming/vol/135/suppl/C">JLAMP 2023</a> [<a href="https://doi.org/10.1016/j.jlamp.2023.100891">doi</a>].
+              <!-- Journal of Logical and Algebraic Methods in Programming -->
+            </li>
+            <li>
+              <a href="publications/TaboneFrancalanza-ICE2022.pdf">Session Fidelity for ElixirST: A Session-Based Type System for Elixir Modules</a> (<a href="publications/TaboneFrancalanza-ICE2022 (extended).pdf">extended</a>).
+              Gerard Tabone, Adrian Francalanza. <a href="https://www.discotec.org/2022/ice">ICE 2022</a> [<a href="https://doi.org/10.4204/EPTCS.365.2">doi</a>].
+            </li>
+            <li>
+              <a href="publications/TaboneFrancalanza2021-AGERE21.pdf">Session Types in Elixir</a>.
+              Gerard Tabone, Adrian Francalanza. <a href="https://2021.splashcon.org/home/agere-2021">AGERE 2021</a> [<a href="https://doi.org/10.1145/3486601.3486708">doi</a>].
+            </li>
+            <!-- <li>
+              <a href="publications/UoM - technical report 2022.pdf">Static Checking of Concurrent Programs in Elixir Using Session Types</a>.
+              Gerard Tabone, Adrian Francalanza. TR.
+            </li> -->
+          </ul>
+        </section>
+        <section>
+          <h1>Talks</h1>
+          <ul>
+            <li>
+              <a href="publications/FrancalanzaTabone-ST30 (proposal).pdf">Session-Based Typechecking for Elixir Modules Using ElixirST</a>.
+              Adrian Francalanza, Gerard Tabone. <a href="https://2023.splashcon.org/home/st-anniversary-30#About">30 Years of Session Types (ST30)</a>.
+            </li>
+          </ul>
+        </section>
       </div>
-      <div class="subsubtitle">
-        <p>
-        I'm a graduate student at the Department of Computer Science, advised by <a href="http://staff.um.edu.mt/afra1/">Adrian Francalanza</a>.
-        </p>
-        <!-- <p>
-        My research interests include concurrency, type systems, formal verification and behavioural types. 
-        </p> -->
-        You can reach me via <a href="mailto:gerard@tabone.me">email</a> (or <a href="https://twitter.com/gerardtabone">twitter</a>, <a href="https://dblp.org/pid/305/8698">dblp</a>).
-        </p>
-        <!-- <p>
-          <a href="https://github.com/gertab/">GitHub</a>
-          &#128205; 0A11, Faculty of ICT, University of Malta
-        </p> -->
-      </div>
-    </div>
-    <div class="content">
-      <section>
-        <h1>Papers</h1>
-        <!-- <h1>Papers and Talks</h1> -->
-        <ul>
-          <li>
-            <a href="publications/FrancalanzaTaboneJLAMP.pdf">ElixirST: A Session-Based Type System for Elixir Modules</a>.
-            Adrian Francalanza, Gerard Tabone. <a href="https://www.sciencedirect.com/journal/journal-of-logical-and-algebraic-methods-in-programming/vol/135/suppl/C">JLAMP 2023</a> [<a href="https://doi.org/10.1016/j.jlamp.2023.100891">doi</a>].
-            <!-- Journal of Logical and Algebraic Methods in Programming -->
-          </li>
-          <li>
-            <a href="publications/TaboneFrancalanza-ICE2022.pdf">Session Fidelity for ElixirST: A Session-Based Type System for Elixir Modules</a> (<a href="publications/TaboneFrancalanza-ICE2022 (extended).pdf">extended</a>).
-            Gerard Tabone, Adrian Francalanza. <a href="https://www.discotec.org/2022/ice">ICE 2022</a> [<a href="https://doi.org/10.4204/EPTCS.365.2">doi</a>].
-          </li>
-          <li>
-            <a href="publications/TaboneFrancalanza2021-AGERE21.pdf">Session Types in Elixir</a>.
-            Gerard Tabone, Adrian Francalanza. <a href="https://2021.splashcon.org/home/agere-2021">AGERE 2021</a> [<a href="https://doi.org/10.1145/3486601.3486708">doi</a>].
-          </li>
-          <!-- <li>
-            <a href="publications/UoM - technical report 2022.pdf">Static Checking of Concurrent Programs in Elixir Using Session Types</a>.
-            Gerard Tabone, Adrian Francalanza. TR.
-          </li> -->
-        </ul>
-      </section>
-      <section>
-        <h1>Talks</h1>
-        <ul>
-          <li>
-            <a href="publications/FrancalanzaTabone-ST30 (proposal).pdf">Session-Based Typechecking for Elixir Modules Using ElixirST</a>.
-            Adrian Francalanza, Gerard Tabone. <a href="https://2023.splashcon.org/home/st-anniversary-30#About">30 Years of Session Types (ST30)</a>.
-          </li>
-        </ul>
-      </section>
     </div>
   </body>
 </html>
